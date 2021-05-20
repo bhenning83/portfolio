@@ -3,6 +3,7 @@ import About from './About';
 import Home from './Home';
 import Contact from './Contact';
 import Work from './Work';
+import Hamburger from './Hamburger'
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
@@ -11,6 +12,7 @@ function Menu() {
   return (
     <div>
       <ul id='navbar' className=''>
+        <Hamburger />
         <li>
           <Link activeClass='active' to='home' smooth={true} offset={-50}>
             Home

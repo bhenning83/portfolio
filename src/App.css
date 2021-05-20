@@ -46,12 +46,17 @@ table {
 }
 #navbar {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  height: 100vh;
   align-items: center;
-  width: 50%;
-  height: 50px;
-  position: fixed;
+  justify-content: center;
+  width: 150px;
   background: lightblue;
+  position: fixed;
+  right: 0;
+  z-index: 999;
+  margin-right: -150px;
 }
 .prof-pic {
   width: 200px;
@@ -59,4 +64,10 @@ table {
   border: 10px solid black;
   border-radius: 50%;
   margin-top: 100px;
+}
+.burger {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  color: black;
 }
