@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import About from './About';
 import Home from './Home';
 import Contact from './Contact';
@@ -10,7 +10,7 @@ function Menu() {
 
   return (
     <div>
-      <ul id='navbar'>
+      <ul id='navbar' className=''>
         <li>
           <Link activeClass='active' to='home' smooth={true} offset={-50}>
             Home

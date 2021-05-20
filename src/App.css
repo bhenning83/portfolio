@@ -47,8 +47,16 @@ table {
 #navbar {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 50%;
   height: 50px;
   position: fixed;
   background: lightblue;
+}
+.prof-pic {
+  width: 200px;
+  height: 200px;
+  border: 10px solid black;
+  border-radius: 50%;
+  margin-top: 100px;
 }
