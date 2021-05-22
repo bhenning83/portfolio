@@ -23,8 +23,39 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+@font-face {
+  font-family: 'Poppins-thin';
+  src: local('Poppins'), url(./components/assets/fonts/Poppins/Poppins-Thin.ttf);
+}
+@font-face {
+  font-family: 'Poppins-extra-light';
+  src: local('Poppins'), url(./components/assets/fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+  font-family: 'Poppins-regular';
+  src: local('Poppins'), url(./components/assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: 'Poppins-light';
+  src: local('Poppins'), url(./components/assets/fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: 'Poppins-medium';
+  src: local('Poppins'), url(./components/assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: 'Poppins-bold';
+  src: local('Poppins'), url(./components/assets/fonts/Poppins/Poppins-Bold.ttf);
 }
 ol, ul {
 	list-style: none;
@@ -41,33 +72,80 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+body {
+	line-height: 1;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
 .section {
   height: 100vh;
+  border: 1px solid blue;
+}
+.container {
+  border: 2px solid brown;
+}
+.container-fluid {
+  border: 2px solid brown;
 }
 #navbar {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100vh;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  background: lightblue;
+  height: 100vh;
+  width: 250px;
   position: fixed;
-  right: 0;
-  z-index: 999;
-  margin-right: -150px;
+  top: 0;
+  right: -250px;
+  z-index: 99;
+  background-color: lightgray;
+}
+#navbar li {
+  font-size: 3rem;
+  margin: 25px 0;
+  cursor: pointer;
 }
 .prof-pic {
   width: 200px;
   height: 200px;
   border: 10px solid black;
   border-radius: 50%;
-  margin-top: 100px;
+}
+.home {
+  background: lightgray;
+}
+.home-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.home-title div {
+  text-align: right;
+  width: 35rem;
 }
 .burger {
   position: fixed;
   top: 25px;
   right: 25px;
   color: black;
+  animation-duration: 0.5s;
+  cursor: pointer;
+  z-index: 100;
+}
+.bar {
+  width: 10px;
+  height: 100px;
+  background-color: black;
+}
+@keyframes slideIn {
+  from {right: -250px;
+        box-shadow: 0;}
+  to {right: 0px;
+      box-shadow: -10px 0 10px black;}
+}
+@keyframes slideOut {
+  from {right: 0px;
+        box-shadow: -10px 0 10px black;}
+  to {right: -250px;
+      box-shadow: 0}
 }

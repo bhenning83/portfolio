@@ -5,8 +5,9 @@ function Hamburger() {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
-    const nav = document.getElementById('navbar')
-    nav.style.marginRight = open === true ? '-150px' : '0px'
+    const nav = document.getElementById('navbar');
+    nav.style.animation = open === false ? 'slideIn 0.5s' : 'slideOut 0.5s'
+    nav.style.animationFillMode = open === false ? 'forwards' : 'backwards'
     setOpen(open => !open)
   }
 
@@ -19,7 +20,7 @@ function Hamburger() {
 	      height={25}
 	      strokeWidth={2}
 	      animationDuration={0.5}
-/>
+      />
     </div>
   )
 }

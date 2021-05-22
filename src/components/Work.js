@@ -2,7 +2,7 @@ import React from 'react'
 
 function Work() {
   return (
-    <div className='section'>WORK PAGE</div>
+    <div className='section row'>WORK PAGE</div>
   )
 }
 
