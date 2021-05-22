@@ -7,10 +7,11 @@ function Home() {
       <div className='col-12 col-lg-6 d-flex justify-content-center align-items-center'>
         <div className='prof-pic'></div>
       </div>
-      <div className='col-12 col-lg-6 d-flex justify-content-center align-items-center home-title'>
-        <div d-flex>
-          <h1>Hi. I'm Brendon. Please give me a job. </h1>
-          <div className='bar'></div>
+      <div className='col-12 col-lg-6 d-flex justify-content-start align-items-center home-title'>
+        <div className='title-box'>
+          <h1>Hi.</h1>
+          <h1>I'm Brendon.</h1>
+          <h1>But you can call me hired.</h1>
         </div>
       </div>
     </div>
