@@ -161,8 +161,8 @@ body {
   border-radius: 50%;
   background-color: black;
   position: absolute;
-  top: 190px;
-  left: 20px;
+  top: 365px;
+  left: -20px;
   transition: top 0.2s;
 }
 @keyframes slideIn {
