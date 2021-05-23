@@ -1,6 +1,5 @@
 import './App.css';
 import Menu from './components/Menu';
-import Hamburger from './components/Hamburger';
 import About from './components/About';
 import Home from './components/Home';
 import Contact from './components/Contact';
@@ -23,7 +22,6 @@ function App() {
         <Element name='contact'>
           <Contact />
         </Element>
-        <Hamburger /> 
         <Menu />
       </div>
     </div>

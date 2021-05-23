@@ -98,7 +98,7 @@ body {
 }
 #navbar li {
   font-size: 3rem;
-  margin: 25px 0;
+  margin: 50px 0;
   cursor: pointer;
 }
 .prof-pic {
@@ -154,6 +154,16 @@ body {
   animation-duration: 0.s;
   cursor: pointer;
   z-index: 100;
+}
+#nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 190px;
+  left: 20px;
+  transition: top 0.2s;
 }
 @keyframes slideIn {
   from {right: -250px;
