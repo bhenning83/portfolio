@@ -5,10 +5,16 @@ import ProjectPreview from './ProjectPreview'
 import projects from './projects'
 
 function Work() {
-  const [project, setProject] = useState(projects[0])
+  const [project, setProject] = useState(projects[0]);
+  const [vis, setVis] = useState(false);
   
   const handleClick = (proj) => {
-    setProject(proj)
+    setProject(proj);
+    setVis(vis => !vis)
+  }
+
+  const closePreview = () => {
+    setVis(vis => !vis)
   }
 
   return (
@@ -38,7 +44,7 @@ function Work() {
           )
         })}
       </div>
-      <ProjectPreview project={project} />
+      <ProjectPreview project={project} vis={vis} closePreview={closePreview} />
     </div>
   )
 }

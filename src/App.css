@@ -197,6 +197,10 @@ body {
   /* border: 1px solid black; */
   margin-right: 20px;
 }
+.big-thumb {
+  height: 270px;
+  width: 480px;
+}
 .project-links {
   font-size: 0.8rem;
   color: black;
@@ -204,6 +208,30 @@ body {
 .project-links:hover {
   text-decoration: underline;
   color: black;
+}
+#preview-container {
+  position: absolute;
+  height: 80%;
+  background-color: #dedede;
+}
+.preview-box {
+  position: relative;
+  margin: 0 75px;
+  height: 100%;
+  border: 3px solid black;
+  padding: 25px;
+  border-radius: 20px;
+}
+#close-btn {
+  position: absolute;
+  right: 15px;
+  width: 40px;
+  top: 15px;
+  background-color: #dedede;
+  font-size: 2rem;
+  box-shadow: none;
+  border: 2px solid black;
+  border-radius: 50%;
 }
 @keyframes slideIn {
   from {right: -250px;
@@ -271,5 +299,13 @@ body {
   .project-links {
     font-size: 0.8rem;
     color: black;
+  }
+  .preview-box {
+    padding: 75px 25px;
+    margin: 0 10px;
+  }
+  .big-thumb {
+    height: 169px;
+    width: 300px;
   }
 }

@@ -10,7 +10,7 @@ function ProjectBox(props) {
         src={project.getThumb()} 
         alt="Screenshot of Where's Waldo project"
         onClick={() => handleClick(project)}
-      ></img>
+      />
       <div>
         <h3 className='project-title' onClick={() => handleClick(project)}>{project.getTitle()}</h3>
         <div className='d-flex'>
