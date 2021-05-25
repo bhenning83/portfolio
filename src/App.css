@@ -78,14 +78,11 @@ body {
   font-weight: 400;
   background: #dedede;
 }
-.section {
-  /* height: 100vh; */
-}
 .home, .about, .contact {
   min-height: 100vh;
 }
 .work {
-  position: relative
+  position: relative;
 }
 #navbar {
   display: flex;
@@ -216,11 +213,13 @@ body {
   color: black;
 }
 #preview-container {
-  position: absolute;
-  height: 80%;
-  background-color: #dedede;
+  position: fixed;
+  height: calc(100vh - 150px);
+  top: 75px;
+  z-index: 2;
 }
 .preview-box {
+  background-color: #f4f0f0;
   position: relative;
   margin: 0 75px;
   height: 100%;
@@ -431,14 +430,14 @@ body {
   }
   .contact-info-box {
     margin-left: -25px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .touch {
     margin-right: -25px;
     margin-left: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .contact-info-container > div {
-    height: 255px;
+    height: 315px;
   }
 }
