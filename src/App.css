@@ -156,8 +156,6 @@ body {
   animation-duration: 0.s;
   cursor: pointer;
   z-index: 100;
-  box-shadow: 0 0 0 5px #dedede;
-  background-color: #dedede;
 }
 #nav-dot {
   width: 8px;
@@ -181,7 +179,6 @@ body {
 .cat-title {
   font-size: 1.7rem;
   font-weight: 600;
-  align-self: center;
   margin: 25px 0;
 }
 .project-box {
@@ -232,6 +229,16 @@ body {
   box-shadow: none;
   border: 2px solid black;
   border-radius: 50%;
+}
+.project-desc {
+  max-width: 650px;
+}
+.lang-logo {
+  height: 50px;
+}
+#pencilruler {
+  height: 50px;
+  color: blue;
 }
 @keyframes slideIn {
   from {right: -250px;
