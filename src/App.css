@@ -79,7 +79,10 @@ body {
   background: #dedede;
 }
 .section {
-  height: 100vh;
+  /* height: 100vh; */
+}
+.home, .about, .contact {
+  min-height: 100vh;
 }
 .work {
   position: relative
@@ -191,7 +194,6 @@ body {
 .project-thumb {
   height: 90px;
   width: 160px;
-  /* border: 1px solid black; */
   margin-right: 20px;
 }
 .big-thumb {
@@ -240,6 +242,25 @@ body {
   height: 50px;
   color: blue;
 }
+.line-work {
+  width: 0;
+  height: 2px;
+  margin-top: 5px;
+  background: black;
+  transition: width 1s;
+}
+.line-about {
+  width: 0;
+  height: 2px;
+  margin-top: 5px;
+  background: black;
+  transition: width 1s;
+}
+.about-pic {
+  height: 500px;
+  width: 300px;
+  border: 1px solid black;
+}
 @keyframes slideIn {
   from {right: -250px;
         box-shadow: 0;}
@@ -285,7 +306,7 @@ body {
     font-size: 1.5rem;
   }
   .section-title {
-    font-size: 2rem
+    font-size: 1.5rem
   }
   .project-box {
     margin-left: 0px

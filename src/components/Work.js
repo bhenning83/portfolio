@@ -23,9 +23,13 @@ function Work() {
 
   return (
     <div className='section row work'>
-      <h1 className='section-title col-12 text-center'>A Few Projects</h1>
+      <div className='section-title col-12 text-center d-flex justify-content-center align-items-center'>
+        <div className='line-work'></div>
+        <h1 className='mx-1 mx-sm-2 mx-lg-3'>A Few Projects</h1>
+        <div className='line-work'></div>
+      </div>
       <div className='col-12 col-lg-4 cat'>
-        <div className='d-flex align-items-center mx-auto'>
+        <div className='d-flex align-items-center mx-auto mb-3'>
           <h2 className='cat-title mr-3'>Ruby</h2>
           <img src={rubylogo} alt='Ruby Logo' className='lang-logo'/>
         </div>
@@ -36,7 +40,7 @@ function Work() {
         })}
       </div>
       <div className='col-12 col-lg-4 cat'>
-        <div className='d-flex align-items-center mx-auto'>
+        <div className='d-flex align-items-center mx-auto mb-3'>
           <h2 className='cat-title mr-3'>JavaScript</h2>
           <img src={jslogo} alt='JavaScript Logo' className='lang-logo'/>
         </div>  
@@ -47,7 +51,7 @@ function Work() {
         })}
       </div>
       <div className='col-12 col-lg-4 cat'>
-        <div className='d-flex align-items-center mx-auto'>
+        <div className='d-flex align-items-center mx-auto mb-3'>
           <h2 className='cat-title mr-3'>Responsive Design</h2>
           <FontAwesomeIcon icon={faPencilRuler} id='pencilruler' size='2x' />
         </div>  
