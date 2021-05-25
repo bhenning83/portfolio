@@ -47,6 +47,16 @@ function Menu() {
         dot.style.top = '265px';
         break;
       case 'contact': 
+        const contactLines = document.querySelectorAll('.line-contact');
+        const touches = document.querySelectorAll('.touch > h1');
+        const phones = document.querySelectorAll('.phone');
+        const emails = document.querySelectorAll('.email');
+        const bar = document.querySelector('.bar')
+        contactLines.forEach(line => line.style.width = '80px');
+        touches.forEach(touch => touch.style.marginRight = '0');
+        phones.forEach(phone => phone.style.marginLeft = '0');
+        emails.forEach(email => email.style.marginLeft = '0');
+        bar.style.height = '100%'
         dot.style.top = '365px'
         break;
       default:
