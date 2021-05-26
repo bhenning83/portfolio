@@ -9,6 +9,16 @@ function Menu() {
   const handleClick = (idx, delay='0.2s') => {
     const nav = document.getElementById('navbar');
     const dot = document.getElementById('nav-dot');
+    const burger = document.querySelector('.burger');
+    if (open === true) {
+      nav.style.animation = `slideOut 0.5s ${delay}`
+      nav.style.animationFillMode = 'backwards'
+      burger.style.backgroundColor = '#dedede'
+    } else {
+      nav.style.animation = `slideIn 0.5s ${delay}`
+      nav.style.animationFillMode = 'forwards'
+      burger.style.backgroundColor = '#f5f5f5'
+    }
     nav.style.animation = open === false ? `slideIn 0.5s ${delay}` : `slideOut 0.5s ${delay}`;
     nav.style.animationFillMode = open === false ? 'forwards' : 'backwards';
     switch (idx) {

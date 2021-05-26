@@ -8,23 +8,27 @@ import newsweekImg from './assets/images/newsweek.png'
 import chessImg from './assets/images/chess.png'
 import mastermindImg from './assets/images/mastermind.png'
 import waldomock from './assets/images/mocks/waldomock.png'
-import facebookmock from './assets/images/mocks/facebookmock.png'
-import cvmock from './assets/images/mocks/cvmock.png'
-import chessmock from './assets/images/mocks/chessmock.png'
-import mastermindmock from './assets/images/mocks/mastermindmock.png'
-import beansmock from './assets/images/mocks/beansmock.png'
-import tnwmock from './assets/images/mocks/tnwmock.png'
-import toDomock from './assets/images/mocks/to-domock.png'
-import newsweekmock from './assets/images/mocks/newsweekmock.png'
+import facebookmock from './assets/images/mocks/fbMock.png'
+import cvmock from './assets/images/mocks/cvMock.png'
+import chessmock from './assets/images/mocks/chessMock.png'
+import mastermindmock from './assets/images/mocks/mastermindMock.png'
+import beansmock from './assets/images/mocks/beansMock.png'
+import tnwmock from './assets/images/mocks/tnwMock.png'
+import toDomock from './assets/images/mocks/toDoMock.png'
+import newsweekmock from './assets/images/mocks/newsweekMock.png'
+import fbPhoneMock from './assets/images/mocks/fbPhone.png'
+import newsweekPhoneMock from './assets/images/mocks/newsweekPhoneMock.png'
+import tnwPhoneMock from './assets/images/mocks/tnwPhoneMock.png'
 
-const Project = (title, thumb, mock, live, source, desc) => {
+const Project = (title, thumb, mock, live, source, desc, phoneMock = '') => {
   const getTitle = () => title;
   const getThumb = () => thumb;
   const getMock = () => mock
   const getLive = () => live;
   const getSource = () => source;
   const getDesc = () => desc
-  return {getTitle, getThumb, getLive, getMock, getSource, getDesc}
+  const getPhoneMock = () => phoneMock
+  return {getTitle, getThumb, getLive, getMock, getPhoneMock, getSource, getDesc}
 }
 
 const fb = Project(
@@ -33,7 +37,8 @@ const fb = Project(
   facebookmock,
   'https://warm-everglades-80886.herokuapp.com/users/sign_in', 
   'https://github.com/bhenning83/apathetic_facebook',
-  "The moms have taken over Facebook and it was about time someone built a new one. This app is built with Ruby on Rails and features the whole shibang: user authentication, API calls, error handling, sessions tracking...sign up (fake emails/passwords will work) and come say hi."
+  "The moms have taken over Facebook and it was about time someone built a new one. This app is built with Ruby on Rails and features the whole shibang: user authentication, API calls, error handling, sessions tracking...sign up (fake emails/passwords will work) and come say hi.",
+  fbPhoneMock,
   )
 const chess = Project(
   'Chess', 
@@ -89,7 +94,8 @@ const tnw = Project(
   tnwmock,
   'https://bhenning83.github.io/TNW-magazine/', 
   'https://github.com/bhenning83/TNW-magazine',
-  "The goal here was to recreate TNW's magazine layout with media queries to make it responsive. Sure, you can view it on your desktop. But I went through all that hard work, so you could at least check it out on mobile as well."
+  "The goal here was to recreate TNW's magazine layout with media queries to make it responsive. Sure, you can view it on your desktop. But I went through all that hard work, so you could at least check it out on mobile as well.",
+  tnwPhoneMock
   )
 const newsweek = Project(
   'Newsweek', 
@@ -97,7 +103,8 @@ const newsweek = Project(
   newsweekmock,
   'https://bhenning83.github.io/newsweek/', 
   'https://github.com/bhenning83/newsweek',
-  "If you were wondering what was happening on June 23, 2020, look no further. Using Bootstrap, I recreated Newsweek's magazine. It's easy to forget it's not the real site, so don't get frustrated when none of the links or buttons work."
+  "If you were wondering what was happening on June 23, 2020, look no further. Using Bootstrap, I recreated Newsweek's magazine. It's easy to forget it's not the real site, so don't get frustrated when none of the links or buttons work.",
+  newsweekPhoneMock
   )
 
 const projects = [

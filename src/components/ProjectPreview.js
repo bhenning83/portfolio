@@ -10,14 +10,19 @@ function ProjectPreview(props) {
 
   return (
     <div className='col-12' id='preview-container'>
-      <div className='preview-box d-flex flex-column align-items-center'>
+      <div className='preview-box d-flex align-items-center'>
         <button id='close-btn' onClick={closePreview}>X</button>
-        <img src={project.getMock()} className='big-thumb' alt='project preview' />
-        <h1 className='project-title mt-3'>{project.getTitle()}</h1>
-        <p className='my-4 project-desc'>{project.getDesc()}</p>
+        <div className='mock-box'>
+          <img src={project.getMock()} className='big-thumb' alt='project preview' />
+          <img src={project.getPhoneMock()} className='phone-mock' alt='' />
+        </div>
         <div>
-          <a href={project.getLive()} className='project-links mr-4' target='_blank' rel='noopener noreferrer'>See It In Action</a>
-          <a href={project.getSource()} className='project-links' target='_blank' rel='noopener noreferrer'>View Source Code</a>
+          <h1 className='preview-title'>{project.getTitle()}</h1>
+          <p className='my-4 project-desc'>{project.getDesc()}</p>
+          <div>
+            <a href={project.getLive()} className='project-links mr-4' target='_blank' rel='noopener noreferrer'>See It In Action</a>
+            <a href={project.getSource()} className='project-links' target='_blank' rel='noopener noreferrer'>View Source Code</a>
+          </div>
         </div>
       </div>
     </div>
