@@ -19,6 +19,7 @@ import newsweekmock from './assets/images/mocks/newsweekMock.png'
 import fbPhoneMock from './assets/images/mocks/fbPhone.png'
 import newsweekPhoneMock from './assets/images/mocks/newsweekPhoneMock.png'
 import tnwPhoneMock from './assets/images/mocks/tnwPhoneMock.png'
+import toDoPhoneMock from './assets/images/mocks/toDoPhoneMock.png'
 
 const Project = (title, thumb, mock, live, source, desc, phoneMock = '') => {
   const getTitle = () => title;
@@ -78,7 +79,8 @@ const toDo = Project(
   toDomock,
   'https://bhenning83.github.io/to-do-list/', 
   'https://github.com/bhenning83/to-do-list',
-  "I had a long list of to-do items to bring this app to life, and I really could've used the finished product along the way. Oh the irony. The app allows you to toggle between viewing in task mode or in project mode. It uses local storage, so go ahead and add 'Reach Out to Brendon Henning' to your list."
+  "I had a long list of to-do items to bring this app to life, and I really could've used the finished product along the way. Oh the irony. The app allows you to toggle between viewing in task mode or in project mode. It uses local storage, so go ahead and add 'Reach Out to Brendon Henning' to your list.",
+  toDoPhoneMock
   )
 const cv = Project(
   'CV Generator', 
