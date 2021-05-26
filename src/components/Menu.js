@@ -82,7 +82,7 @@ function Menu() {
             </li>
             <li className>
               <Link activeClass='active' to='about' smooth={true} onClick={() => handleClick(2)}>
-                About
+                Bio
               </Link>
             </li>
             <li className>

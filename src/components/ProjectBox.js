@@ -14,8 +14,8 @@ function ProjectBox(props) {
       <div>
         <h3 className='project-title' onClick={() => handleClick(project)}>{project.getTitle()}</h3>
         <div className='d-flex'>
-          <a className='project-links mr-3' href={project.getSource()} target='_blank' rel='noopener noreferrer'>Source Code</a>
-          <a className='project-links' href={project.getLive()} target='_blank' rel='noopener noreferrer'>Live Preview</a>
+          <a className='project-links mr-3' href={project.getLive()} target='_blank' rel='noopener noreferrer'>Live Preview</a>
+          <a className='project-links' href={project.getSource()} target='_blank' rel='noopener noreferrer'>Source Code</a>
         </div>
       </div>
     </div>

@@ -13,6 +13,9 @@ function Home() {
           <h1>I'm Brendon.</h1>
           <h1>But you can call me hired.</h1>
         </div>
+        <div className='title-bar-box d-flex'>
+          <div className='title-bar align-self-start'></div>
+        </div>
       </div>
     </div>
   )

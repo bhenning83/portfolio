@@ -5,8 +5,8 @@ import rubylogo from './assets/images/ruby.png'
 import jslogo from './assets/images/js.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPencilRuler } from '@fortawesome/free-solid-svg-icons'
-
 import projects from './projects'
+let uniqid = require('uniqid')
 
 function Work() {
   const [project, setProject] = useState(projects[0]);
@@ -57,7 +57,7 @@ function Work() {
         </div>  
         {[projects[7], projects[8]].map(proj => {
           return (
-            <ProjectBox project={proj} handleClick={handleClick} />
+            <ProjectBox project={proj} handleClick={handleClick} key={uniqid()}/>
           )
         })}
       </div>
