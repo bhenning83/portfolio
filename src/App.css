@@ -255,11 +255,12 @@ body {
   text-decoration: underline;
   color: black;
 }
-#preview-container {
+.preview-container {
   position: fixed;
   height: calc(100vh - 150px);
   top: 75px;
   z-index: 2;
+  overflow-y: hidden;
 }
 .preview-box {
   background-color: #f4f0f0;
@@ -461,11 +462,11 @@ body {
   .project-title {
     font-size: 1.2rem;
     margin-bottom: 7px;
+    align-self: center;
   }
   .project-thumb {
     height: 60px;
     width: 90px;
-    /* border: 1px solid black; */
     margin-right: 10px;
   }
   .project-links {
@@ -473,12 +474,12 @@ body {
     color: black;
   }
   .preview-box {
-    padding: 75px 25px;
+    padding: 75px 10px 10px 10px;
     margin: 0 10px;
+    flex-direction: column;
   }
   .big-thumb {
-    height: 169px;
-    width: 300px;
+    height: 260px;
   }
   .contact-info-box {
     margin-left: -25px;
@@ -497,5 +498,22 @@ body {
   }
   .cat-title {
     font-size: 1.5rem;
+  }
+  .mock-box {
+    height: 325px;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  #chess-preview {
+    height: calc(100vh - 85px);
+  }
+  #chess-preview .project-desc {
+    font-size: 0.9rem;
+  }
+  .preview-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
