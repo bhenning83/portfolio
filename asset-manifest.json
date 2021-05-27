@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.63217eb7.chunk.css",
-    "main.js": "/portfolio/static/js/main.8cf9d57e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.8cf9d57e.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.d9e734cb.chunk.css",
+    "main.js": "/portfolio/static/js/main.a1ea9b20.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a1ea9b20.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
     "static/js/2.d15d809a.chunk.js": "/portfolio/static/js/2.d15d809a.chunk.js",
     "static/js/2.d15d809a.chunk.js.map": "/portfolio/static/js/2.d15d809a.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.63217eb7.chunk.css.map": "/portfolio/static/css/main.63217eb7.chunk.css.map",
+    "static/css/main.d9e734cb.chunk.css.map": "/portfolio/static/css/main.d9e734cb.chunk.css.map",
     "static/js/2.d15d809a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d15d809a.chunk.js.LICENSE.txt",
     "static/media/App.css": "/portfolio/static/media/Roboto-Regular.a8d6ac03.ttf",
     "static/media/beans.4231cb07.png": "/portfolio/static/media/beans.4231cb07.png",
     "static/media/beansMock.9cc34c02.png": "/portfolio/static/media/beansMock.9cc34c02.png",
+    "static/media/beansPhoneMock.07360e84.png": "/portfolio/static/media/beansPhoneMock.07360e84.png",
     "static/media/chess.725874c8.png": "/portfolio/static/media/chess.725874c8.png",
     "static/media/chessMock.dc8e5aac.png": "/portfolio/static/media/chessMock.dc8e5aac.png",
     "static/media/cv.43611122.png": "/portfolio/static/media/cv.43611122.png",
     "static/media/cvMock.93732af8.png": "/portfolio/static/media/cvMock.93732af8.png",
-    "static/media/facebook.d87cbc3b.png": "/portfolio/static/media/facebook.d87cbc3b.png",
+    "static/media/facebook.64923ad1.png": "/portfolio/static/media/facebook.64923ad1.png",
     "static/media/fbMock.911bab8b.png": "/portfolio/static/media/fbMock.911bab8b.png",
     "static/media/fbPhone.923ded2b.png": "/portfolio/static/media/fbPhone.923ded2b.png",
     "static/media/js.3d09f2e4.png": "/portfolio/static/media/js.3d09f2e4.png",
@@ -39,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.76232b81.js",
     "static/js/2.d15d809a.chunk.js",
-    "static/css/main.63217eb7.chunk.css",
-    "static/js/main.8cf9d57e.chunk.js"
+    "static/css/main.d9e734cb.chunk.css",
+    "static/js/main.a1ea9b20.chunk.js"
   ]
 }
