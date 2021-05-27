@@ -281,7 +281,6 @@ body {
   width: 25px;
   height: 25px;
   top: 15px;
-  /* background-color: #dedede; */
   font-size: 1.2rem;
   box-shadow: none;
   border: 2px solid black;
@@ -327,6 +326,7 @@ body {
   height: 500px;
   width: 300px;
   border: 1px solid black;
+  background-color: white;
 }
 .about p {
   font-size: 1.1rem;

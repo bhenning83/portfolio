@@ -6,7 +6,9 @@ function ProjectPreview(props) {
 
   useEffect(() => {
     const box = document.querySelector('.preview-container');
+    const body = document.querySelector('body')
     box.style.display = vis === true ? 'block' : 'none'
+    body.style.overflowY = vis === true ? 'hidden' : 'scroll'
   })
 
   const setId = () => {
