@@ -12,13 +12,24 @@ function ProjectPreview(props) {
     return project.getTitle() === 'Chess' ? 'chess-preview' : ''
   }
 
+  const setClass = () => {
+    if (project.getTitle() === 'Apathetic Facebook'
+    || project.getTitle() === 'To-Do List'
+    || project.getTitle() === 'Newsweek'
+    || project.getTitle() === 'TNW Magazine') {
+      return 'phone-mock'
+    } else {
+      return 'no-phone'
+    }
+  } 
+
   return (
     <div className='col-12 preview-container' id={setId()}>
       <div className='preview-box d-flex align-items-center'>
         <button id='close-btn' onClick={closePreview}>X</button>
         <div className='mock-box'>
           <img src={project.getMock()} className='big-thumb' alt='project preview' />
-          <img src={project.getPhoneMock()} className='phone-mock' alt='' />
+          <img src={project.getPhoneMock()} className={setClass()} alt='' />
         </div>
         <div className='preview-content'>
           <h1 className='preview-title'>{project.getTitle()}</h1>

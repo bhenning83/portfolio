@@ -175,7 +175,7 @@ body {
   color: black;
   animation-duration: 0.s;
   cursor: pointer;
-  z-index: 100;
+  z-index: 4;
   background-color: #dedede;
   transition: background-color 0.5s
 }
@@ -258,8 +258,8 @@ body {
 .preview-container {
   position: fixed;
   height: calc(100vh - 150px);
-  top: 75px;
-  z-index: 2;
+  top: 10px;
+  z-index: 5;
   overflow-y: hidden;
 }
 .preview-box {
@@ -413,6 +413,14 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
 }
+.preview-box .project-links {
+  color: hsl(0, 0%, 36%);
+  text-decoration: underline;
+}
+.no-phone {
+  display: none;
+  width: 0;
+}
 @keyframes slideIn {
   from {right: -250px;
     box-shadow: 0;}
@@ -453,15 +461,49 @@ body {
     min-height: 7rem;
   }
 }
+@media only screen and (max-width: 992px) {
+  .preview-box {
+    padding: 75px 10px 10px 10px;
+    margin: 0 10px;
+    flex-direction: column;
+  }
+  .project-box {
+    margin-left: 0px
+  }
+  .preview-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mock-box {
+    max-height: 260px;
+    border: 1px solid blue;
+    width: 100%;
+    max-width: 280px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  #chess-preview {
+    height: calc(100vh - 88px);
+  }
+  #chess-preview .project-desc {
+    font-size: 0.9rem;
+  }
+  .big-thumb {
+    height: 220px;
+  }
+  .phone-mock {
+    height: 120px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .title-box {
     font-size: 1.5rem;
   }
   .section-title {
     font-size: 1.5rem
-  }
-  .project-box {
-    margin-left: 0px
   }
   .project-title {
     font-size: 1.2rem;
@@ -476,19 +518,6 @@ body {
   .project-links {
     font-size: 0.8rem;
     color: black;
-  }
-  .preview-box {
-    padding: 75px 10px 10px 10px;
-    margin: 0 10px;
-    flex-direction: column;
-  }
-  .preview-box .project-links {
-    color: hsl(0, 0%, 36%);
-    text-decoration: underline;
-  }
-  .big-thumb {
-    height: 260px;
-    position: relative;
   }
   .contact-info-box {
     margin-left: -25px;
@@ -508,23 +537,7 @@ body {
   .cat-title {
     font-size: 1.5rem;
   }
-  .mock-box {
-    height: 325px;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-  }
-  #chess-preview {
-    height: calc(100vh - 88px);
-  }
-  #chess-preview .project-desc {
-    font-size: 0.9rem;
-  }
-  .preview-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .big-thumb {
+    height: 260px;
   }
 }
