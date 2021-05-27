@@ -28,7 +28,7 @@ function Work() {
         <h1 className='mx-1 mx-sm-2 mx-lg-3'>A Few Projects</h1>
         <div className='line-work'></div>
       </div>
-      <div className='col-12 col-lg-4 cat'>
+      <div className='col-12 col-xl-4 cat'>
         <div className='d-flex align-items-center mx-auto mb-3'>
           <h2 className='cat-title mr-3'>Ruby</h2>
           <img src={rubylogo} alt='Ruby Logo' className='lang-logo'/>
@@ -39,7 +39,7 @@ function Work() {
           )
         })}
       </div>
-      <div className='col-12 col-lg-4 cat'>
+      <div className='col-12 col-xl-4 cat'>
         <div className='d-flex align-items-center mx-auto mb-3'>
           <h2 className='cat-title mr-3'>JavaScript</h2>
           <img src={jslogo} alt='JavaScript Logo' className='lang-logo'/>
@@ -50,7 +50,7 @@ function Work() {
           )
         })}
       </div>
-      <div className='col-12 col-lg-4 cat'>
+      <div className='col-12 col-xl-4 cat'>
         <div className='d-flex align-items-center mx-auto mb-3'>
           <h2 className='cat-title mr-3'>Responsive Design</h2>
           <FontAwesomeIcon icon={faPencilRuler} id='pencilruler' size='2x' />

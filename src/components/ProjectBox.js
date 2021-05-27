@@ -8,7 +8,7 @@ function ProjectBox(props) {
       <img 
         className='project-thumb' 
         src={project.getThumb()} 
-        alt="Screenshot of Where's Waldo project"
+        alt="Screenshot of project"
         onClick={() => handleClick(project)}
       />
       <div>

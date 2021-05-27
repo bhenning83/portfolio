@@ -197,6 +197,7 @@ body {
 .cat {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .cat-title {
   font-size: 1.7rem;
@@ -204,11 +205,11 @@ body {
   margin: 25px 0;
 }
 .project-box {
-  margin-left: 75px;
+  width: 350px;
   cursor: pointer;
 }
 .project-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 7px;
   box-shadow: 0;
 }
@@ -218,8 +219,10 @@ body {
 .project-thumb {
   height: 90px;
   width: 160px;
+  min-width: 160px;
+  object-fit: cover;
   margin-right: 20px;
-  transition: box-shadow 2s;
+  transition: box-shadow 1s;
 }
 .project-thumb:hover {
   box-shadow: 0 0 5px 5px gray;
@@ -460,9 +463,6 @@ body {
     margin: 0 10px;
     flex-direction: column;
   }
-  .project-box {
-    margin-left: 0px
-  }
   .preview-content {
     display: flex;
     flex-direction: column;
@@ -503,7 +503,7 @@ body {
     align-self: center;
   }
   .project-thumb {
-    height: 60px;
+    height: 80px;
     width: 90px;
     margin-right: 10px;
   }

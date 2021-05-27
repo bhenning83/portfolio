@@ -20,6 +20,7 @@ import fbPhoneMock from './assets/images/mocks/fbPhone.png'
 import newsweekPhoneMock from './assets/images/mocks/newsweekPhoneMock.png'
 import tnwPhoneMock from './assets/images/mocks/tnwPhoneMock.png'
 import toDoPhoneMock from './assets/images/mocks/toDoPhoneMock.png'
+import beansPhoneMock from './assets/images/mocks/beansPhoneMock.png'
 
 const Project = (title, thumb, mock, live, source, desc, phoneMock = '') => {
   const getTitle = () => title;
@@ -71,7 +72,8 @@ const cart = Project(
   beansmock,
   'https://bhenning83.github.io/shopping-cart/', 
   'https://github.com/bhenning83/shopping-cart',
-  "No, I won't take your money. Yet. This project was an opportunity to practice the functionality of adding products to a shopping cart. If you happen to be a coffee roaster, let's collab. I have some ideas."
+  "No, I won't take your money. Yet. This project was an opportunity to practice the functionality of adding products to a shopping cart. If you happen to be a coffee roaster, let's collab. I have some ideas.",
+  beansPhoneMock
   )
 const toDo = Project(
   'To-Do List', 
