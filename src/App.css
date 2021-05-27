@@ -254,7 +254,7 @@ body {
 }
 .preview-container {
   position: fixed;
-  height: calc(100vh - 20px);
+  height: calc(100vh - 25px);
   top: 10px;
   z-index: 5;
   overflow-y: hidden;
