@@ -269,7 +269,7 @@ body {
   height: 100%;
   border: 3px solid black;
   padding: 25px;
-  border-radius: 20px;
+  border-radius: 30px;
   justify-content: center;
 }
 .preview-title {
@@ -478,6 +478,10 @@ body {
     margin: 0 10px;
     flex-direction: column;
   }
+  .preview-box .project-links {
+    color: hsl(0, 0%, 36%);
+    text-decoration: underline;
+  }
   .big-thumb {
     height: 260px;
   }
@@ -506,7 +510,7 @@ body {
     margin-bottom: 15px;
   }
   #chess-preview {
-    height: calc(100vh - 85px);
+    height: calc(100vh - 88px);
   }
   #chess-preview .project-desc {
     font-size: 0.9rem;
