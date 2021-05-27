@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import PhoneMock from './PhoneMock'
 
 function ProjectPreview(props) {
   const {project, vis, closePreview} = props
@@ -12,16 +13,6 @@ function ProjectPreview(props) {
     return project.getTitle() === 'Chess' ? 'chess-preview' : ''
   }
 
-  const setClass = () => {
-    if (project.getTitle() === 'Apathetic Facebook'
-    || project.getTitle() === 'To-Do List'
-    || project.getTitle() === 'Newsweek'
-    || project.getTitle() === 'TNW Magazine') {
-      return 'phone-mock'
-    } else {
-      return 'no-phone'
-    }
-  } 
 
   return (
     <div className='col-12 preview-container' id={setId()}>
@@ -29,7 +20,7 @@ function ProjectPreview(props) {
         <button id='close-btn' onClick={closePreview}>X</button>
         <div className='mock-box'>
           <img src={project.getMock()} className='big-thumb' alt='project preview' />
-          <img src={project.getPhoneMock()} className={setClass()} alt='' />
+          <PhoneMock project={project} />
         </div>
         <div className='preview-content'>
           <h1 className='preview-title'>{project.getTitle()}</h1>

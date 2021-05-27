@@ -237,9 +237,6 @@ body {
 }
 .big-thumb {
   height: 370px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .phone-mock {
   position: absolute;
@@ -257,7 +254,7 @@ body {
 }
 .preview-container {
   position: fixed;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 20px);
   top: 10px;
   z-index: 5;
   overflow-y: hidden;
@@ -417,10 +414,6 @@ body {
   color: hsl(0, 0%, 36%);
   text-decoration: underline;
 }
-.no-phone {
-  display: none;
-  width: 0;
-}
 @keyframes slideIn {
   from {right: -250px;
     box-shadow: 0;}
@@ -477,7 +470,6 @@ body {
   }
   .mock-box {
     max-height: 260px;
-    border: 1px solid blue;
     width: 100%;
     max-width: 280px;
     margin-right: 0;
@@ -492,7 +484,7 @@ body {
     font-size: 0.9rem;
   }
   .big-thumb {
-    height: 220px;
+    max-height: 260px;
   }
   .phone-mock {
     height: 120px;
@@ -538,6 +530,9 @@ body {
     font-size: 1.5rem;
   }
   .big-thumb {
-    height: 260px;
+    max-height: 220px;
+  }
+  .mock-box {
+    max-height: 220px;
   }
 }
