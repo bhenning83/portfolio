@@ -278,13 +278,17 @@ body {
 #close-btn {
   position: absolute;
   right: 15px;
-  width: 40px;
+  width: 25px;
+  height: 25px;
   top: 15px;
-  background-color: #dedede;
-  font-size: 2rem;
+  /* background-color: #dedede; */
+  font-size: 1.2rem;
   box-shadow: none;
   border: 2px solid black;
   border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .project-desc {
   max-width: 400px;
