@@ -85,6 +85,9 @@ body {
 .home, .about, .contact {
   min-height: 100vh;
 }
+.contact {
+  margin-top: 50px;
+}
 .work {
   position: relative;
   overflow: hidden;
@@ -456,7 +459,7 @@ body {
     margin-left: 0px
   }
   .project-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 7px;
   }
   .project-thumb {
@@ -491,5 +494,8 @@ body {
   }
   .home-title {
     align-items: flex-start;
+  }
+  .cat-title {
+    font-size: 1.5rem;
   }
 }
