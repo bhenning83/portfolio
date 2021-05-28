@@ -49,11 +49,11 @@ function Menu() {
       case 'work': 
         const workLines = document.querySelectorAll('.line-work');
         dot.style.top = '167px';
-        workLines.forEach(line => line.style.width = '80px')
+        workLines.forEach(line => line.style.width = '160px')
         break;
       case 'about':
         const aboutLines = document.querySelectorAll('.line-about');
-        aboutLines.forEach(line => line.style.width = '80px')
+        aboutLines.forEach(line => line.style.width = '160px')
         dot.style.top = '265px';
         break;
       case 'contact': 
@@ -62,7 +62,7 @@ function Menu() {
         const phones = document.querySelectorAll('.phone');
         const emails = document.querySelectorAll('.email');
         const bar = document.querySelector('.bar')
-        contactLines.forEach(line => line.style.width = '80px');
+        contactLines.forEach(line => line.style.width = '160px');
         touches.forEach(touch => touch.style.marginRight = '0');
         phones.forEach(phone => phone.style.marginLeft = '0');
         emails.forEach(email => email.style.marginLeft = '0');
