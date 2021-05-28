@@ -9,15 +9,12 @@ function Menu() {
   const handleClick = (idx, delay='0.2s') => {
     const nav = document.getElementById('navbar');
     const dot = document.getElementById('nav-dot');
-    const burger = document.querySelector('.burger');
     if (open === true) {
       nav.style.animation = `slideOut 0.5s ${delay}`
       nav.style.animationFillMode = 'backwards'
-      burger.style.backgroundColor = '#dedede'
     } else {
       nav.style.animation = `slideIn 0.5s ${delay}`
       nav.style.animationFillMode = 'forwards'
-      burger.style.backgroundColor = '#f5f5f5'
     }
     nav.style.animation = open === false ? `slideIn 0.5s ${delay}` : `slideOut 0.5s ${delay}`;
     nav.style.animationFillMode = open === false ? 'forwards' : 'backwards';
@@ -61,7 +58,7 @@ function Menu() {
         aboutLines.forEach(line => line.style.width = '160px')
         break;
       case 'contact': 
-        const contactLines = document.querySelectorAll('.line-contact');
+        // const contactLines = document.querySelectorAll('.line-contact');
         const touches = document.querySelectorAll('.touch > h1');
         const phones = document.querySelectorAll('.phone');
         const emails = document.querySelectorAll('.email');
@@ -71,7 +68,7 @@ function Menu() {
         emails.forEach(email => email.style.marginLeft = '0');
         bar.style.height = '100%'
         dot.style.top = '365px'
-        contactLines.forEach(line => line.style.width = '160px')
+        // contactLines.forEach(line => line.style.width = '160px')
         break;
       default:
         break;

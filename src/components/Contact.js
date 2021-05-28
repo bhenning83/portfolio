@@ -3,13 +3,8 @@ import React from 'react'
 function Contact() {
   return (
     <div className='section row contact'>
-       <div className='section-title col-12 text-center d-flex justify-content-center align-items-center'>
-        <div className='line-contact'></div>
-        <h1 className='mx-1 mx-sm-2 mx-lg-3'>Contact</h1>
-        <div className='line-contact'></div>
-      </div>
-      <div className='col-12 mx-auto contact-info-container d-flex justify-content-center'>
-        <div className='row w-100 test'>
+      <div className='col-12 mx-auto contact-info-container d-flex justify-content-center '>
+        <div className='row w-100'>
           <div className='col-5 touch'>
             <h1>Let's</h1>
             <h1>Get</h1>
