@@ -306,18 +306,21 @@ body {
   width: 0;
   height: 7px;
   background: black;
+  max-width: 160px;
   transition: width 1s;
 }
 .line-about {
   width: 0;
   height: 7px;
   background: black;
+  max-width: 160px;
   transition: width 1s;
 }
 .line-contact {
   width: 0;
   height: 7px;
   background: black;
+  max-width: 160px;
   transition: width 1s;
 }
 .about-pic {
