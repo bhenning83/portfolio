@@ -48,7 +48,7 @@ const chess = Project(
   chessmock,
   'https://replit.com/@bhenning83/chess?v=1', 
   'https://github.com/bhenning83/chess',
-  "I told a friend I was writing a chess game and he said, 'Oh wow. So you would need to know how to play chess to make that?' ...yes, Trevor. I also needed to know the logic behind being able to move the pieces around the board, determing legal vs illegal moves, taking opponent pieces, and determining check and checkmate. The game is played entirely in the console; the live preview runs the game in a simulated online console. However, saving the game won't work as it utilizes local storage. To use the save game feature, head to my Github repo, fork it, clone it, bundle install it, and run it locally."
+  "I told a friend I was writing a chess game and he said, 'Oh wow. So you would need to know how to play chess to make that?' ...yes, Trevor. I also needed to know the logic behind being able to move the pieces around the board, determing legal vs illegal moves, taking opponent pieces, and determining check and checkmate. The game is played entirely in the console; the live preview runs the game in an online simulated console. The save game feature utilizes local storage and will only work when run locally. To use this feature, head to my Github repo, fork it, clone it, bundle install it, and run it locally."
   )
 const mastermind = Project(
   'Mastermind', 
@@ -56,7 +56,7 @@ const mastermind = Project(
   mastermindmock,
   'https://replit.com/@bhenning83/mastermind?v=1', 
   'https://github.com/bhenning83/mastermind',
-  "This program allows you to play Mastermind against the computer, either as the mastermind or as the code breaker. When playing as the mastermind, the computer uses intelligence to guess your code. And yes, I have lost against my own program. The game is played entirely in the console; the live preview runs the game in a simulated online command line."
+  "This program allows the user to play Mastermind against the computer, either as the mastermind or the code breaker. When playing as the mastermind, the computer uses intelligence to guess your code. And yes, I have lost against my own program. The game is played entirely in the console; the live preview runs the game in an online simulated console."
   )
 const waldo = Project(
   "Where's Waldo", 
@@ -72,7 +72,7 @@ const cart = Project(
   beansmock,
   'https://bhenning83.github.io/shopping-cart/', 
   'https://github.com/bhenning83/shopping-cart',
-  "No, I won't take your money. Yet. Built in React, This project was an opportunity to practice the functionality of adding products to a shopping cart. If you happen to be a coffee roaster, let's collab. I have some ideas.",
+  "No, I won't take your money. Yet. Built in React, this project was an opportunity to practice the functionality of adding products to a shopping cart. If you happen to be a coffee roaster, let's collab. I have some ideas.",
   beansPhoneMock
   )
 const toDo = Project(
@@ -81,7 +81,7 @@ const toDo = Project(
   toDomock,
   'https://bhenning83.github.io/to-do-list/', 
   'https://github.com/bhenning83/to-do-list',
-  "I had to work through a long list of tasks to bring this app to life. Oh the irony. The app allows you to toggle between viewing in task mode or in project mode. It's written entirely in Vanilla JS, and it uses local storage, so your tasks are loaded in with each session. Might I suggest adding 'Reach Out to Brendon Henning' to your list.",
+  "I had to work through a long list of tasks to bring this app to life. Oh the irony. The app allows the user to toggle between viewing in task mode or in project mode. It's written entirely in Vanilla JS, and it uses local storage, so your tasks are loaded in with each session. Might I suggest adding 'Reach Out to Brendon Henning' to your list.",
   toDoPhoneMock
   )
 const cv = Project(
