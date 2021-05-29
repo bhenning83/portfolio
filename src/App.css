@@ -429,11 +429,11 @@ body {
   from {right: -250px;
     box-shadow: 0;}
     to {right: 0px;
-      box-shadow: -5px 0 10px black;}
+      box-shadow: -3px 0 7px rgb(0,0,0, 30%);}
 }
 @keyframes slideOut {
   from {right: 0px;
-        box-shadow: -5px 0 10px black;}
+        box-shadow: -3px 0 7px rgb(0,0,0, 30%);}
   to {right: -250px;
       box-shadow: 0}
 }
