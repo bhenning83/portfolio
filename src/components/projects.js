@@ -48,7 +48,7 @@ const chess = Project(
   chessmock,
   'https://replit.com/@bhenning83/chess?v=1', 
   'https://github.com/bhenning83/chess',
-  "I told a friend I was writing a chess game and he said, 'Oh wow. So you would need to know how to play chess to make that?' ...yes, Trevor. I also needed to know the logic behind being able to move the pieces around the board, determing legal vs illegal moves, taking opponent pieces, and determining check and checkmate. The game is played entirely in the console; the live preview runs the game in a simulated online console. However, saving the game won't work as it utilizes local storage. To use the save game feature, head to the Github repo, fork it, clone it, bundle install it, and run it locally."
+  "I told a friend I was writing a chess game and he said, 'Oh wow. So you would need to know how to play chess to make that?' ...yes, Trevor. I also needed to know the logic behind being able to move the pieces around the board, determing legal vs illegal moves, taking opponent pieces, and determining check and checkmate. The game is played entirely in the console; the live preview runs the game in a simulated online console. However, saving the game won't work as it utilizes local storage. To use the save game feature, head to my Github repo, fork it, clone it, bundle install it, and run it locally."
   )
 const mastermind = Project(
   'Mastermind', 
@@ -72,7 +72,7 @@ const cart = Project(
   beansmock,
   'https://bhenning83.github.io/shopping-cart/', 
   'https://github.com/bhenning83/shopping-cart',
-  "No, I won't take your money. Yet. This project was an opportunity to practice the functionality of adding products to a shopping cart. If you happen to be a coffee roaster, let's collab. I have some ideas.",
+  "No, I won't take your money. Yet. Built in React, This project was an opportunity to practice the functionality of adding products to a shopping cart. If you happen to be a coffee roaster, let's collab. I have some ideas.",
   beansPhoneMock
   )
 const toDo = Project(
@@ -81,7 +81,7 @@ const toDo = Project(
   toDomock,
   'https://bhenning83.github.io/to-do-list/', 
   'https://github.com/bhenning83/to-do-list',
-  "I had a long list of to-do items to bring this app to life, and I really could've used the finished product along the way. Oh the irony. The app allows you to toggle between viewing in task mode or in project mode. It uses local storage, so go ahead and add 'Reach Out to Brendon Henning' to your list.",
+  "I had to work through a long list of tasks to bring this app to life. Oh the irony. The app allows you to toggle between viewing in task mode or in project mode. It's written entirely in Vanilla JS, and it uses local storage, so your tasks are loaded in with each session. Might I suggest adding 'Reach Out to Brendon Henning' to your list.",
   toDoPhoneMock
   )
 const cv = Project(
@@ -90,7 +90,7 @@ const cv = Project(
   cvmock,
   'https://bhenning83.github.io/cv-project/', 
   'https://github.com/bhenning83/cv-project',
-  "Forms galore. Or forms horror, depending on how you feel. I went both ways while building this one. "
+  "Forms galore. Or forms horror, depending on how you feel. I went both ways while building this one. This was built in React and was a great exercise in form validation."
   )
 const tnw = Project(
   'TNW Magazine', 
