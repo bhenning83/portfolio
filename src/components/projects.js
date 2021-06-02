@@ -37,7 +37,7 @@ const fb = Project(
   'Apathetic Facebook', 
   facebookImg, 
   facebookmock,
-  'https://warm-everglades-80886.herokuapp.com/users/sign_in', 
+  'https://apathetic-facebook.herokuapp.com', 
   'https://github.com/bhenning83/apathetic_facebook',
   "The moms have taken over Facebook and it was about time someone built a new one. This app is built with Ruby on Rails and features the whole shibang: user authentication, API calls, error handling, sessions tracking...sign up (fake emails/passwords will work) and come say hi.",
   fbPhoneMock,
