@@ -94,6 +94,14 @@ body {
   position: relative;
   overflow: hidden;
 }
+.gray-bar {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background: #dedede;
+}
 #navbar {
   display: flex;
   flex-direction: column;
@@ -181,7 +189,7 @@ body {
   color: black;
   animation-duration: 0.s;
   cursor: pointer;
-  z-index: 4;
+  z-index: 6;
 }
 #nav-dot {
   width: 8px;

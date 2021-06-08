@@ -88,6 +88,7 @@ function Menu() {
   }
   return (
     <div>
+      <div className='gray-bar'></div>
       <Hamburger open={open} handleClick={handleClick} /> 
       <div className='menu' id='navbar'>
         <div className='position-relative'>
