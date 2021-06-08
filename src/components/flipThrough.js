@@ -8,13 +8,13 @@ const flipThrough = async () => {
   pic1.style.display = 'block'
   pic2.style.display = 'block'
   pic3.style.display = 'block'
-  await delay(1500)
+  await delay(1000)
   flash.style.animation = 'pour1 0.2s';
   pic1.style.display = 'none';
-  await delay(500)
+  await delay(600)
   flash.style.animation = 'pour2 0.2s';
   pic2.style.display = 'none';
-  await delay(500)
+  await delay(600)
   flash.style.animation = 'pour3 0.2s';
   pic3.style.display = 'none';
 }
