@@ -1,4 +1,5 @@
 import React from 'react'
+import flipThrough from './flipThrough.js'
 
 function About() {
   return (
@@ -9,7 +10,13 @@ function About() {
         <div className='line-about'></div>
       </div>
       <div className='col-12 col-lg-5 my-4 my-lg-0'>
-        <div className='about-pic mx-auto'></div>
+        <div className='mx-auto position-relative' id='about-pic-box' onClick={flipThrough}>
+          <div className='about-pic' id='about-pic-1'></div>
+          <div className='about-pic' id='about-pic-2'></div>
+          <div className='about-pic' id='about-pic-3'></div>
+          <div className='about-pic' id='about-pic-4'></div>
+          <div id='photo-flash'></div>
+        </div>
       </div>
       <div className='col-12 col-lg-5'>
         <h2 className='bio-heading'>A Little About How I Got Here</h2>

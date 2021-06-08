@@ -114,12 +114,15 @@ body {
   margin: 50px 0;
   cursor: pointer;
 }
-.prof-pic {
+#prof-pic {
   width: 300px;
   height: 300px;
   border: 7px solid black;
   border-radius: 50%;
-  background: white;
+  background-image: url('./components/assets/images/glamour/head1.jpeg');
+  background-position: top -60px right -55px;
+  background-size: 130%;
+  background-repeat: no-repeat;
 }
 .title-box {
   text-align: right;
@@ -323,11 +326,46 @@ body {
   max-width: 160px;
   transition: width 1s;
 }
-.about-pic {
+#about-pic-box {
   height: 500px;
   width: 300px;
-  border: 1px solid black;
-  background-color: white;
+  border: 7px solid black;
+  position: relative;
+  cursor: pointer;
+}
+.about-pic {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#about-pic-1 {
+  background-image: url('./components/assets/images/glamour/pour1.jpeg');
+  z-index: 4;
+}
+#about-pic-2 {
+  background-image: url('./components/assets/images/glamour/pour2.jpeg');
+  z-index: 3;
+}
+#about-pic-3 {
+  background-image: url('./components/assets/images/glamour/pour3.jpeg');
+  z-index: 2;
+}
+#about-pic-4 {
+  background-image: url('./components/assets/images/glamour/pour4.jpeg');
+  z-index: 1;
+}
+#photo-flash {
+  height: calc(500px - 14px);
+  width: calc(300px - 14px);
+  position: absolute;
+  background: white;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 .about p {
   font-size: 1.1rem;
@@ -463,6 +501,30 @@ body {
     min-height: 0;
   } to {
     min-height: 7rem;
+  }
+}
+@keyframes pour1 {
+  from { 
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes pour2 {
+  from { 
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes pour3 {
+  from { 
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
   }
 }
 @media only screen and (max-width: 992px) {

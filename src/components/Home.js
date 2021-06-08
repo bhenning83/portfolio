@@ -1,11 +1,12 @@
 import React from 'react'
 
-
 function Home() {
   return (
     <div className='section home row'>
       <div className='col-12 col-lg-6 d-flex justify-content-center align-items-center'>
-        <div className='prof-pic'></div>
+        <div className='prof-pic-box'>
+          <div id='prof-pic'></div>
+        </div>
       </div>
       <div className='col-12 col-lg-6 home-title'>
         <div className='title-box'>
