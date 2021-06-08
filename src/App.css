@@ -237,7 +237,7 @@ body {
   transition: box-shadow 1s;
 }
 .project-thumb:hover {
-  box-shadow: 0 0 5px 5px gray;
+  box-shadow: 0 0 9px 2px rgb(0,0,0, 30%);
 }
 .computer {
   height: 600px;
