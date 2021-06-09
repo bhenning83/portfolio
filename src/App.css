@@ -384,13 +384,15 @@ body {
   height: 350px;
 }
 .touch {
-  margin-left: 80px;
-  margin-right: -80px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   font-size: 3rem;
   font-weight: 600;
+}
+.bar-box {
+  width: 7px;
+  margin: 0 -80px;
 }
 .bar {
   height: 0;
@@ -402,10 +404,9 @@ body {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-  margin-left: -80px;
+  justify-content: flex-start;
   font-size: 1.5rem;
   overflow: hidden;
-  padding: 3px;
   min-width: 150px;
 }
 .contact-info-box a {
@@ -470,6 +471,16 @@ body {
 .preview-box .project-links {
   color: hsl(0, 0%, 36%);
   text-decoration: underline;
+}
+.end-p-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.end-p-box > p:first-child {
+  font-weight: 700;
+  /* font-size: 1.1rem; */
 }
 @keyframes slideIn {
   from {right: -250px;
@@ -541,6 +552,9 @@ body {
     margin: 0 10px;
     flex-direction: column;
   }
+  .bar-box {
+    margin: -35px;
+  }
   .preview-content {
     display: flex;
     flex-direction: column;
@@ -587,12 +601,9 @@ body {
     color: black;
   }
   .contact-info-box {
-    margin-left: -25px;
     font-size: 1.5rem;
   }
   .touch {
-    margin-right: -25px;
-    margin-left: 0;
     font-size: 2.5rem;
   }
   .contact-info-container > div {
@@ -609,5 +620,11 @@ body {
   }
   .mock-box {
     max-height: 220px;
+  }
+  .bar-box {
+    margin: -25px;
+  }
+  .end-p-box {
+    align-items: flex-start;
   }
 }
