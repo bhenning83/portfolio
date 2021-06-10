@@ -100,12 +100,12 @@ function Menu() {
               </Link>
             </li>
             <li className>
-              <Link activeClass='active' to='work' smooth={true} onClick={() => handleClick(1)}>
+              <Link activeClass='active' to='work' offset={-75} smooth={true} onClick={() => handleClick(1)}>
                 Work
               </Link>
             </li>
             <li className>
-              <Link activeClass='active' to='about' smooth={true} onClick={() => handleClick(2)}>
+              <Link activeClass='active' to='about'offset={-75} smooth={true} onClick={() => handleClick(2)}>
                 Bio
               </Link>
             </li>
