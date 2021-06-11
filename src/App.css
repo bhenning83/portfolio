@@ -89,7 +89,6 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  padding-bottom: 100px;
 }
 .work {
   position: relative;
@@ -481,7 +480,6 @@ body {
 }
 .end-p-box > p:first-child {
   font-weight: 700;
-  /* font-size: 1.1rem; */
 }
 @keyframes slideIn {
   from {right: -250px;
@@ -627,5 +625,8 @@ body {
   }
   .end-p-box {
     align-items: flex-start;
+  }
+  _::-webkit-full-page-media, _:future, :root .safari-only {
+      height: 90vh;
   }
 }
