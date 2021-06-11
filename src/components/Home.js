@@ -1,6 +1,22 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import delay from './delay'
 
 function Home() {
+
+  const runAnimation = async () => {
+    await delay(500)
+    document.getElementById('title1').style.top = '0'
+    document.querySelector('.title-bar').style.height = '7rem'
+    await delay(670)
+    document.getElementById('title2').style.top = '2.3rem'
+    await delay(670);
+    document.getElementById('title3').style.top = '4.7rem'
+  }
+
+  useEffect(() => {
+    runAnimation()
+  })
+
   return (
     <div className='section home row'>
       <div className='col-12 col-lg-6 d-flex justify-content-center align-items-center'>

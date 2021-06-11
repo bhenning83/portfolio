@@ -146,39 +146,27 @@ body {
 .title-bar {
   width: 7px;
   background-color: black;
-  animation-name: grow;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  height: 0;
+  transition: height 2s;
+  transition-timing-function: linear;
 }
 #title1 {
   position: absolute;
   top: -100rem;
   right: 10px;
-  animation-name: slideText1;
-  -webkit-animation-name: slideText1;
-  animation-duration: 0.67s;
-  animation-fill-mode: forwards;
+  transition: top 0.67s;
 }
 #title2 {
   position: absolute;
   top: -100rem;
   right: 10px;
-  animation-name: slideText2;
-  -webkit-animation-name: slideText2;
-  animation-duration: 0.67s;
-  animation-delay: 0.67s;
-  animation-fill-mode: forwards;
+  transition: top 0.67s;
 }
 #title3 {
   position: absolute;
   top: -100rem;
   right: 10px;
-  animation-name: slideText3;
-  -webkit-animation-name: slideText3;
-  animation-duration: 0.67s;
-  animation-delay: 1.33s;
-  animation-fill-mode: forwards;
+  transition: top 0.67s;
 }
 .home-title {
   display: flex;
@@ -496,34 +484,6 @@ body {
         box-shadow: -3px 0 7px rgb(0,0,0, 30%);}
   to {right: -250px;
       box-shadow: 0}
-}
-@keyframes slideText1 {
-  from {
-    top: -100rem;
-  } to {
-    top: 0rem;
-  }
-}
-@keyframes slideText2 {
-  from {
-    top: -100rem;
-  } to {
-    top: 2.3rem;
-  }
-}
-@keyframes slideText3 {
-  from {
-    top: -100rem;
-  } to {
-    top: 4.7rem;
-  }
-}
-@keyframes grow {
-  from {
-    min-height: 0;
-  } to {
-    min-height: 7rem;
-  }
 }
 @keyframes pour1 {
   from { 
