@@ -10,9 +10,9 @@ function Home() {
       </div>
       <div className='col-12 col-lg-6 home-title'>
         <div className='title-box'>
-          <h1>Hey.</h1>
-          <h1>I'm Brendon.</h1>
-          <h1>But you can call me hired.</h1>
+          <h1 id='title1'>Hey.</h1>
+          <h1 id='title2'>I'm Brendon.</h1>
+          <h1 id='title3'>But you can call me hired.</h1>
         </div>
         <div className='title-bar-box d-flex'>
           <div className='title-bar align-self-start'></div>

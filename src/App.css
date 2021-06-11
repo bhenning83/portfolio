@@ -151,28 +151,31 @@ body {
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
-.title-box > h1:first-child {
+#title1 {
   position: absolute;
   top: -100rem;
   right: 10px;
   animation-name: slideText1;
+  -webkit-animation-name: slideText1;
   animation-duration: 0.67s;
   animation-fill-mode: forwards;
 }
-.title-box > h1:nth-child(2) {
+#title2 {
   position: absolute;
   top: -100rem;
   right: 10px;
   animation-name: slideText2;
+  -webkit-animation-name: slideText2;
   animation-duration: 0.67s;
   animation-delay: 0.67s;
   animation-fill-mode: forwards;
 }
-.title-box > h1:nth-child(3) {
+#title3 {
   position: absolute;
   top: -100rem;
   right: 10px;
   animation-name: slideText3;
+  -webkit-animation-name: slideText3;
   animation-duration: 0.67s;
   animation-delay: 1.33s;
   animation-fill-mode: forwards;
