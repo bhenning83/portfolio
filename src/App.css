@@ -627,6 +627,6 @@ body {
     align-items: flex-start;
   }
   _::-webkit-full-page-media, _:future, :root .safari-only {
-      height: 90vh;
+      height: 80vh;
   }
 }
