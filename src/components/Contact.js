@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div className='section row contact safari-only'>
+    <div className='section row contact' id='safari-only'>
       <div className='col-12 mx-auto contact-info-container d-flex justify-content-center '>
         <div className='row w-100 d-flex justify-content-center'>
           <div className='col-5 touch'>

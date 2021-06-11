@@ -382,6 +382,7 @@ body {
 }
 .contact-info-container {
   height: 350px;
+  margin-top: 25px;
 }
 .touch {
   display: flex;
@@ -626,7 +627,7 @@ body {
   .end-p-box {
     align-items: flex-start;
   }
-  _::-webkit-full-page-media, _:future, :root .safari-only {
-      height: 80vh;
+  .contact-info-container {
+    margin-top: 130px;
   }
 }
